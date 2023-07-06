@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int n;
+    printf("How many digits? ");
+    scanf("%d", &n);
+    printf("0 \n"); 
+    printf("1 \n");
+    int a = 0;
+    int b = 1;
+    int x = a + b;
+    printf("%d \n", x);
+    int i = 1;
+    int w = n - 3;
+    for(i=1;i<=w;i++) {
+    a = b;
+    b = x;
+    x = a + b;
+    printf("%d \n", x);
+    }
+    return 0;
+}
